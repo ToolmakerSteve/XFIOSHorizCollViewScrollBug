@@ -16,7 +16,6 @@
     <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
     <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
     <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
-    <AndroidUseLatestPlatformSdk>false</AndroidUseLatestPlatformSdk>
     <TargetFrameworkVersion>v11.0</TargetFrameworkVersion>
     <AndroidEnableSGenConcurrent>true</AndroidEnableSGenConcurrent>
     <AndroidUseAapt2>true</AndroidUseAapt2>
@@ -88,7 +87,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\XFIOSHorizCollViewScrollBug\XFIOSHorizCollViewScrollBug.csproj">
-      <Project>{F6E2712F-753E-406D-B4FD-084213DB291E}</Project>
+      <Project>{9C17F3AA-6152-42F2-ABBB-78C3DD3CCE94}</Project>
       <Name>XFIOSHorizCollViewScrollBug</Name>
     </ProjectReference>
   </ItemGroup>
