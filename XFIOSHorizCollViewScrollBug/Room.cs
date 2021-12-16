@@ -1,12 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace XFIOSHorizCollViewScrollBug
+﻿namespace XFIOSHorizCollViewScrollBug
 {
 	public class Room : Xamarin.Forms.BindableObject
 	{
-
 		public string RoomName { get; set; }
 
 		public bool IsSelected {
