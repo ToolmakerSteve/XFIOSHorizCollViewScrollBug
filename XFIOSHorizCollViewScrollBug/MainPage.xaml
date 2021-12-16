@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XFIOSHorizCollViewScrollBug.MainPage">
+
+    <StackLayout>
+        <!--SelectionChangedCommand="{Binding Source={x:Reference ThePage}, Path= BindingContext.RoomChanged}"-->
+        <CollectionView 
+                    x:Name="rooms_List" ItemsLayout = "HorizontalList" ItemsSource="{Binding RoomList}"
+                    SelectionChanged="RoomCollectionSelectionChanged" HeightRequest="50"
+                    SelectionMode="Single" HorizontalScrollBarVisibility="Never" >
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Grid>
+                        <StackLayout Orientation="Horizontal" Margin="0,0,0,15">
+                            <StackLayout VerticalOptions="Start" Orientation="Vertical">
+                                <Label  Text ="{Binding RoomName}"  Padding="20,10,20,0" />
+                                <BoxView x:Name="line" HeightRequest="3" IsVisible="{Binding IsSelected}" BackgroundColor="#1484B8" WidthRequest="5" Margin="18,0,15,0" />
+                            </StackLayout>
+                        </StackLayout>
+                    </Grid>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </StackLayout>
+
+</ContentPage>
