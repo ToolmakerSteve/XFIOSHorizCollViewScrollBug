@@ -12,10 +12,9 @@ namespace XFIOSHorizCollViewScrollBug
 			InitRoomList();
 			BindingContext = this;
 
-
+			// After set BindingContext, so RoomCollectionSelectionChanged gets called.
 			var room = RoomList[0];
 			rooms_List.SelectedItem = room;
-			//room.IsSelected = true;
 		}
 
 		public ObservableCollection<Room> RoomList { get; set; }
